@@ -1,0 +1,728 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masal Ormanı</title>
+
+    <style>
+
+body {
+    background-color: #10271F;
+    color: #F3E8D0;
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+h1 {
+    color: #D9B76E;
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+header p {
+    color: #F3E8D0;
+    font-size: 20px;
+}
+
+button {
+    background-color: #D9B76E;
+    color: #10271F;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.ust-yazi {
+    color: #D9B76E;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.tanitim {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tanitim h2 {
+    color: #D9B76E;
+    font-size: 28px;
+}
+
+.tanitim p {
+    color: #F3E8D0;
+    font-size: 17px;
+    line-height: 1.8;
+}
+header {
+    background-image: url("orman.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+}
+h1 {
+    text-shadow: 0 0 15px rgba(217, 183, 110, 0.5);
+}
+
+header {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.masallar {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.masallar h2 {
+    color: #D9B76E;
+    font-size: 32px;
+}
+
+.masallar > p {
+    color: #F3E8D0;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+.masal-karti {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #1C382D;
+    border: 1px solid #D9B76E;
+    border-radius: 15px;
+    padding: 25px;
+    width: 280px;
+    box-sizing: border-box;
+    margin: 15px;
+}
+.masal-karti {
+    height: 280px;
+}
+
+.masal-karti h3 {
+    color: #D9B76E;
+}
+
+.masal-karti p {
+    line-height: 1.6;
+}
+.masal-karti {
+    transition: 0.3s;
+}
+
+.masal-karti:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(217, 183, 110, 0.25);
+}
+body {
+    background-color: #10271F;
+    background-image:
+        radial-gradient(ellipse at center, rgba(217,183,110,0.18), transparent 65%);
+}
+#masal-alani {
+    background-color: #1C382D;
+    border: 2px solid #D9B76E;
+    border-radius: 20px;
+ padding: 45px;
+width: 95%;
+max-width: 1200px;
+max-height: 75vh;
+overflow-y: auto;
+box-sizing: border-box;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1000;
+text-align: center;
+color: #F3E8D0;
+box-shadow: 0 0 25px rgba(217, 183, 110, 0.3);
+}
+#masal-alani img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+#masal-alani-2 {
+    background-color: #1C382D;
+    border: 2px solid #D9B76E;
+    border-radius: 20px;
+    padding: 45px;
+    width: 95%;
+    max-width: 1200px;
+    max-height: 75vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    text-align: center;
+    color: #F3E8D0;
+    box-shadow: 0 0 25px rgba(217, 183, 110, 0.3);
+}
+#masal-alani-2 img {
+    width: 70%;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+#masal-alani-3 {
+    background-color: #1C382D;
+    border: 2px solid #D9B76E;
+    border-radius: 20px;
+    padding: 45px;
+    width: 95%;
+    max-width: 1200px;
+    max-height: 75vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    text-align: center;
+    color: #F3E8D0;
+    box-shadow: 0 0 25px rgba(217, 183, 110, 0.3);
+}
+#masal-alani-3 img {
+    width: 70%;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+#masal-alani-4 {
+    background-color: #1C382D;
+    border: 2px solid #D9B76E;
+    border-radius: 20px;
+    padding: 45px;
+    width: 95%;
+    max-width: 1200px;
+    max-height: 75vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    text-align: center;
+    color: #F3E8D0;
+    box-shadow: 0 0 25px rgba(217, 183, 110, 0.3);
+}
+#masal-alani-4 img {
+    width: 70%;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+/* Altın renkli kaydırma çubuğu */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1C382D;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D9B76E;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #F3E8D0;
+}
+
+html {
+    scrollbar-color: #D9B76E #1C382D;
+    scrollbar-width: thin;
+}
+body.masal-acik {
+    overflow: hidden;
+}
+#masal-alani-5 {
+    background-color: #1C382D;
+    border: 2px solid #D9B76E;
+    border-radius: 20px;
+    padding: 45px;
+    width: 95%;
+    max-width: 1200px;
+    max-height: 75vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    text-align: center;
+    color: #F3E8D0;
+    box-shadow: 0 0 25px rgba(217, 183, 110, 0.3);
+}
+#masal-alani-5 img {
+    width: 70%;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+#masal-alani-6 {
+    background-color: #1C382D;
+    color: #F3E8D0;
+    width: 80%;
+    max-width: 700px;
+    max-height: 75vh;
+    overflow-y: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 20px;
+    z-index: 1000;
+    text-align: center;
+}
+
+#masal-alani-6 img {
+    width: 70%;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+#masal-alani-7 {
+    background-color: #1C382D;
+    color: #F3E8D0;
+    width: 80%;
+    max-width: 700px;
+    max-height: 75vh;
+    overflow-y: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 20px;
+    z-index: 1000;
+    text-align: center;
+}
+
+#masal-alani-7 img {
+    width: 70%;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+#masal-alani-8 {
+    background-color: #1C382D;
+    color: #F3E8D0;
+    width: 80%;
+    max-width: 700px;
+    max-height: 75vh;
+    overflow-y: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 20px;
+    z-index: 1000;
+    text-align: center;
+}
+
+#masal-alani-8 img {
+    width: 70%;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+.arkaplan-isiklari {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.isik {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #F3D58A;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 3px rgba(243, 213, 138, 0.5);
+    animation: parildama 3s infinite ease-in-out alternate;
+}
+
+@keyframes parildama {
+    from {
+        opacity: 0.15;
+        transform: scale(0.7);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
+.arkaplan-isiklari {
+    z-index: 0;
+}
+
+body > *:not(.arkaplan-isiklari) {
+    position: relative;
+    z-index: 1;
+}
+    </style>
+</head>
+
+<body>
+    <div class="arkaplan-isiklari">
+    <span class="isik" style="left: 10%; top: 20%; animation-delay: 0s;"></span>
+    <span class="isik" style="left: 25%; top: 65%; animation-delay: 1s;"></span>
+    <span class="isik" style="left: 40%; top: 35%; animation-delay: 2s;"></span>
+    <span class="isik" style="left: 55%; top: 80%; animation-delay: 0.5s;"></span>
+    <span class="isik" style="left: 70%; top: 25%; animation-delay: 1.5s;"></span>
+    <span class="isik" style="left: 85%; top: 60%; animation-delay: 2.5s;"></span>
+    <span class="isik" style="left: 95%; top: 40%; animation-delay: 1s;"></span>
+    <span class="isik" style="left: 15%; top: 90%; animation-delay: 2s;"></span>
+    <span class="isik" style="left: 65%; top: 50%; animation-delay: 0.8s;"></span>
+    <span class="isik" style="left: 35%; top: 10%; animation-delay: 1.8s;"></span>
+</div>
+
+<header>
+    <p class="ust-yazi">✧ BİR ZAMANLAR, UZAK DİYARLARDA ✧</p>
+    <h1>Masal Ormanı</h1>
+    <p>Bir zamanlar, uzak diyarlarda...</p>
+    <button>Masalları Keşfet</button>
+</header>
+<section class="tanitim">
+    <h2>Masalların Büyülü Dünyasına Hoş Geldin</h2>
+    <p>
+        Her ağacın ardında başka bir hikâye,
+        her patikanın sonunda yeni bir macera saklı.
+        Türk masallarının büyülü dünyasını keşfetmeye hazır mısın?
+    </p>
+</section>
+<section class="masallar">
+    <h2>Masal Kitaplığı</h2>
+    <p>Her masal, bambaşka bir dünyaya açılan kapıdır.</p>
+    <div class="masal-karti">
+    <h3>Keloğlan ve Padişah</h3>
+    <p>Cesareti ve zekâsıyla zorlukları aşan Keloğlan'ın hikâyesi.</p>
+    <button onclick="masalAc()">Masalı Oku</button>
+</div>
+<div class="masal-karti">
+    <h3>Ağlayan Nar ile Gülen Ayva</h3>
+    <p>Gizemli olaylarla dolu, sevgi ve iyilik üzerine bir masal.</p>
+    <button onclick="masalAc2()">Masalı Oku</button>
+</div>
+<div class="masal-karti">
+    <h3>Zümrüdüanka Kuşu</h3>
+    <p>Küllerinden yeniden doğan efsanevi kuşun büyülü yolculuğu.</p>
+    <button onclick="masalAc3()">Masalı Oku</button>
+</div>
+<div class="masal-karti">
+    <h3>Billur Köşk</h3>
+    <p>Gizemli bir köşkte geçen, sabır ve cesaret dolu bir masal.</p>
+    <button onclick="masalAc4()">Masalı Oku</button>
+</div>
+<div class="masal-karti">
+    <h3>Helvacı Güzeli</h3>
+    <p>Güzelliği ve iyiliğiyle dillere destan olan genç bir kızın hikâyesi.</p>
+    <button onclick="masalAc5()">Masalı Oku</button>
+</div>
+
+<div class="masal-karti">
+    <h3>Tasa Kuşu</h3>
+    <p>Gizemli bir kuşun peşinde gelişen büyülü bir yolculuk.</p>
+    <button onclick="masalAc6()">Masalı Oku</button>
+</div>
+
+<div class="masal-karti">
+    <h3>İğci Baba</h3>
+    <p>İyilik, sabır ve akıl üzerine geleneksel bir Anadolu masalı.</p>
+    <button onclick="masalAc7()">Masalı Oku</button>
+</div>
+
+<div class="masal-karti">
+    <h3>Nardaniye Hanım</h3>
+    <p>Zorluklara karşı mücadele eden genç bir kadının masalı.</p>
+    <button onclick="masalAc8()">Masalı Oku</button>
+</div>
+</section>
+
+<div id="masal-alani" style="display: none;">
+    <h2>Keloğlan ve Padişah</h2>
+
+    <img src="keloğlan.jpg" alt="Keloğlan ve Padişah">
+
+    <div class="masal-metni">
+        <p>
+            Bir varmış, bir yokmuş. Evvel zaman içinde, kalbur saman içinde,
+            uzak diyarların birinde yaşlı annesiyle yaşayan bir Keloğlan varmış.
+            Keloğlan fakirmiş ama aklı, cesareti ve iyilikseverliğiyle herkesin
+            sevgisini kazanırmış.
+        </p>
+
+        <p>
+            Günlerden bir gün, padişah ülkesindeki en zeki insanı bulmak istemiş.
+            Saraya haber salmış ve herkesi büyük bir sınava çağırmış.
+            Keloğlan da annesinin duasını alarak sarayın yolunu tutmuş.
+        </p>
+
+        <p>
+            Saraya vardığında padişah ona zor bir soru sormuş:
+            "Söyle bakalım Keloğlan, dünyadaki en değerli şey nedir?"
+            Keloğlan hiç düşünmeden cevap vermiş:
+            "İnsanın aklı, iyiliği ve doğru sözüdür padişahım."
+        </p>
+
+        <p>
+            Padişah bu cevabı beğenmiş ama Keloğlan'ı biraz daha sınamak istemiş.
+            Ona çözülmesi güç bir bilmece sormuş. Keloğlan dikkatle dinlemiş,
+            düşünmüş ve bilmecenin cevabını bulmuş.
+        </p>
+
+        <p>
+            Padişah, Keloğlan'ın zekâsına hayran kalmış. Ona altınlar ve
+            hediyeler vermek istemiş. Keloğlan ise yalnızca annesine rahat
+            bir hayat sunmasını istemiş.
+        </p>
+
+        <p>
+            Padişah bu isteği kabul etmiş. Keloğlan annesiyle birlikte
+            mutlu bir hayat sürmüş. Herkes onun zenginliğinden önce
+            iyiliğini ve aklını konuşmuş.
+        </p>
+
+        <p><strong>Gökten üç elma düşmüş: Biri anlatana, biri dinleyene, biri de iyilikten vazgeçmeyene...</strong></p>
+    </div>
+
+    <button onclick="masalKapat()">Masalı Kapat</button>
+</div>
+
+<div id="masal-alani-2" style="display: none;">
+    <h2>Ağlayan Nar ile Gülen Ayva</h2>
+    <img src="aglayan-nar.jpg" alt="Ağlayan Nar ile Gülen Ayva">
+
+    <div class="masal-metni">
+        <p>Bir varmış, bir yokmuş. Uzak bir ülkede güzeller güzeli bir bahçe varmış. Bu bahçede bir nar ile bir ayva yaşarmış.</p>
+
+        <p>Nar sürekli ağlarmış. Ayva ise ne olursa olsun gülümser, çevresine umut dağıtırmış.</p>
+
+        <p>Bir gün bahçeye büyük bir karanlık çökmüş. Ayva, narı iyiliğin ve umudun her karanlığı aydınlatabileceğine inandırmış.</p>
+
+        <p>İki arkadaş birlikte bahçeyi yeniden canlandırmış. Zamanla bahçe tekrar rengârenk olmuş.</p>
+
+        <p><strong>O günden sonra herkes gerçek güzelliğin iyilikte, dostlukta ve umutta olduğunu anlamış.</strong></p>
+    </div>
+<button onclick="masalKapat2()">Masalı Kapat</button>
+</div>
+
+<div id="masal-alani-3" style="display: none;">
+    <h2>Zümrüdüanka Kuşu</h2>
+    <img src="zumruduanka.jpg" alt="Zümrüdüanka Kuşu">
+
+    <div class="masal-metni">
+        <p>Bir varmış, bir yokmuş. Uzak diyarların birinde, yemyeşil ormanların ve yüksek dağların ardında Zümrüdüanka adında efsanevi bir kuş yaşarmış.</p>
+
+        <p>Bu kuşun tüyleri güneş gibi parlarmış. Söylentilere göre Zümrüdüanka, dünyanın en uzak köşesinde bulunan Kaf Dağı'nın ardında yaşarmış.</p>
+
+        <p>Bir gün genç bir kahraman, ülkesini kurtaracak çareyi bulmak için Zümrüdüanka'yı aramaya çıkmış. Uzun yollar aşmış, karanlık ormanlardan geçmiş ve pek çok zorlukla karşılaşmış.</p>
+
+        <p>Sonunda Kaf Dağı'na ulaşmış. Zümrüdüanka ona hayatın en büyük sırrının cesaret, sabır ve iyilik olduğunu anlatmış.</p>
+
+        <p>Kahraman öğrendiklerini ülkesine götürmüş. İnsanlar yeniden umutla yaşamaya başlamış. Zümrüdüanka ise gökyüzüne yükselerek gözden kaybolmuş.</p>
+
+        <p><strong>O günden sonra Zümrüdüanka, yeniden doğuşun, umudun ve vazgeçmemenin sembolü olmuş.</strong></p>
+    </div>
+
+    <button onclick="masalKapat3()">Masalı Kapat</button>
+</div>
+<div id="masal-alani-4" style="display: none;">
+    <h2>Billur Köşk</h2>
+    <img src="billur-kosk.jpg" alt="Billur Köşk">
+
+    <div class="masal-metni">
+        <p>Bir varmış, bir yokmuş. Evvel zaman içinde, uzak diyarların birinde güzeller güzeli bir padişah kızı yaşarmış.</p>
+
+        <p>Bir gün genç kız, bahçesinde dolaşırken billurdan yapılmış, ışıl ışıl parlayan gizemli bir köşk görmüş. Köşkün kapısı herkese kapalıymış.</p>
+
+        <p>Genç kız köşkün sırrını öğrenmek için yola çıkmış. Yol boyunca birçok zorlukla karşılaşmış ama cesaretinden ve umudundan hiç vazgeçmemiş.</p>
+
+        <p>Sonunda köşkün kapısını açmayı başarmış. İçeride onu bekleyen büyük bir sır olduğunu görmüş. Bu yolculuk ona sabrın ve iyiliğin değerini öğretmiş.</p>
+
+        <p><strong>O günden sonra billur köşk, cesaret edenlerin hayallerine ulaşabileceğini hatırlatan büyülü bir yer olarak anılmış.</strong></p>
+    </div>
+
+    <button onclick="masalKapat4()">Masalı Kapat</button>
+</div>
+<div id="masal-alani-5" style="display: none;">
+    <h2>Helvacı Güzeli</h2>
+    <img src="helvaci-guzeli.jpg" alt="Helvacı Güzeli">
+
+    <div class="masal-metni">
+        <p>Bir varmış, bir yokmuş. Evvel zaman içinde, uzak bir şehirde güzelliği ve iyiliğiyle tanınan genç bir kız yaşarmış.</p>
+        <p>Bu genç kız, helva yapan bir ustanın yanında çalışırmış. Yaptığı helvalar o kadar lezzetliymiş ki herkes onları tatmak için dükkâna gelirmiş.</p>
+        <p>Bir gün genç kızın karşısına büyük bir sınav çıkmış. Sabır ve cesaretiyle karşılaştığı zorlukları aşmaya çalışmış.</p>
+        <p>İyiliği ve güzel kalbi sayesinde çevresindeki insanların sevgisini kazanmış.</p>
+        <p><strong>O günden sonra Helvacı Güzeli'nin hikâyesi iyiliğin ve güzel yüreğin değerini anlatan bir masal olarak dilden dile yayılmış.</strong></p>
+    </div>
+
+    <button onclick="masalKapat5()">Masalı Kapat</button>
+</div>
+<div id="masal-alani-6" style="display: none;">
+    <h2>Tasa Kuşu</h2>
+    <img src="tasa-kusu.jpg" alt="Tasa Kuşu">
+
+    <div class="masal-metni">
+        <p>Bir varmış, bir yokmuş. Uzak bir ülkede, insanların dertlerini ve tasalarını dinleyen gizemli bir kuş yaşarmış.</p>
+        <p>Bu kuş, zor durumda kalan insanların karşısına çıkar ve onlara yollarını bulmaları için yardım edermiş.</p>
+        <p>Bir gün genç bir yolcu, kaybolan mutluluğunu bulmak için uzun bir yolculuğa çıkmış. Ormanda ilerlerken Tasa Kuşu'yla karşılaşmış.</p>
+        <p>Kuş, genç yolcuya her insanın zaman zaman üzülebileceğini ama umudunu kaybetmemesi gerektiğini anlatmış.</p>
+        <p>Genç yolcu, kuşun öğütlerini dinleyerek yoluna devam etmiş. Zamanla sorunlarını aşmış ve yeniden mutlu olmuş.</p>
+        <p><strong>O günden sonra Tasa Kuşu, umudun ve zor zamanlarda yol gösteren iyiliğin sembolü olmuş.</strong></p>
+    </div>
+
+    <button onclick="masalKapat6()">Masalı Kapat</button>
+</div>
+<div id="masal-alani-7" style="display: none;">
+    <h2>İğci Baba</h2>
+    <img src="igci-baba.jpg" alt="İğci Baba">
+
+    <div class="masal-metni">
+        <p>Bir varmış, bir yokmuş. Uzak bir köyün yakınındaki büyülü ormanda İğci Baba adında yaşlı ve bilge bir adam yaşarmış.</p>
+        <p>Uzun beyaz sakalı, güler yüzü ve elinden hiç bırakmadığı tahta bastonuyla tanınırmış. Ormandaki hayvanlar ve köylüler ona büyük saygı duyarmış.</p>
+        <p>Bir gün ormanda yolunu kaybeden genç bir yolcu, İğci Baba'nın kulübesine rastlamış. Yaşlı adam onu sıcak bir şekilde karşılamış.</p>
+        <p>İğci Baba, genç yolcuya doğru yolu bulması için yardım etmiş ve ona iyiliğin, sabrın ve aklını kullanmanın önemini anlatmış.</p>
+        <p>Genç yolcu köyüne döndüğünde öğrendiklerini herkese anlatmış. O günden sonra İğci Baba'nın bilgeliği dilden dile yayılmış.</p>
+        <p><strong>Ve herkes anlamış ki gerçek bilgelik, iyilik yapmak ve bilgiyi paylaşmakmış.</strong></p>
+    </div>
+
+    <button onclick="masalKapat7()">Masalı Kapat</button>
+</div>
+<div id="masal-alani-8" style="display: none;">
+    <h2>Nardaniye Hanım</h2>
+    <img src="nardaniye-hanim.jpg" alt="Nardaniye Hanım">
+
+    <div class="masal-metni">
+        <p>Bir varmış, bir yokmuş. Evvel zaman içinde, güzel bir ülkede Nardaniye Hanım adında genç ve iyi kalpli bir kız yaşarmış.</p>
+        <p>Üvey annesi ona hiç iyi davranmaz, genç kızın hayatını zorlaştırırmış. Buna rağmen Nardaniye Hanım umudunu ve iyiliğini hiç kaybetmezmiş.</p>
+        <p>Bir gün üvey annesi onu ortadan kaldırmak için kötü bir plan yapmış. Nardaniye Hanım kendisini bekleyen tehlikeden habersizmiş.</p>
+        <p>Yaşadığı zorluklara rağmen genç kız cesaretini korumuş. Karşılaştığı insanların yardımıyla yeniden güvenli bir yere ulaşmış.</p>
+        <p>Sonunda gerçekler ortaya çıkmış ve Nardaniye Hanım huzura kavuşmuş.</p>
+        <p><strong>O günden sonra onun hikâyesi, iyiliğin ve umudun en zor zamanlarda bile kaybolmaması gerektiğini anlatmış.</strong></p>
+    </div>
+
+    <button onclick="masalKapat8()">Masalı Kapat</button>
+</div>
+    <script>
+
+function masalAc() {
+    document.body.classList.add("masal-acik");
+    document.getElementById("masal-alani").style.display = "block";
+}
+
+function masalKapat() {
+    document.getElementById("masal-alani").style.display = "none";
+    document.body.classList.remove("masal-acik");
+}
+
+function masalAc2() {
+    document.body.classList.add("masal-acik");
+    document.getElementById("masal-alani-2").style.display = "block";
+}
+
+function masalKapat2() {
+    document.getElementById("masal-alani-2").style.display = "none";
+    document.body.classList.remove("masal-acik");
+}
+function masalAc3() {
+    document.getElementById("masal-alani-3").style.display = "block";
+}
+
+function masalAc3() {
+    document.body.classList.add("masal-acik");
+    document.getElementById("masal-alani-3").style.display = "block";
+}
+
+function masalKapat3() {
+    document.getElementById("masal-alani-3").style.display = "none";
+    document.body.classList.remove("masal-acik");
+}
+function masalAc4() {
+    document.body.classList.add("masal-acik");
+    document.getElementById("masal-alani-4").style.display = "block";
+}
+
+function masalKapat4() {
+    document.getElementById("masal-alani-4").style.display = "none";
+    document.body.classList.remove("masal-acik");
+}
+function masalAc5() {
+    document.body.classList.add("masal-acik");
+    document.getElementById("masal-alani-5").style.display = "block";
+}
+
+function masalKapat5() {
+    document.getElementById("masal-alani-5").style.display = "none";
+    document.body.classList.remove("masal-acik");
+}
+function masalAc6() {
+    document.body.classList.add("masal-acik");
+    document.getElementById("masal-alani-6").style.display = "block";
+}
+
+function masalKapat6() {
+    document.getElementById("masal-alani-6").style.display = "none";
+    document.body.classList.remove("masal-acik");
+}
+function masalAc7() {
+    document.body.classList.add("masal-acik");
+    document.getElementById("masal-alani-7").style.display = "block";
+}
+
+function masalKapat7() {
+    document.getElementById("masal-alani-7").style.display = "none";
+    document.body.classList.remove("masal-acik");
+}
+function masalAc8() {
+    document.body.classList.add("masal-acik");
+    document.getElementById("masal-alani-8").style.display = "block";
+}
+
+function masalKapat8() {
+    document.getElementById("masal-alani-8").style.display = "none";
+    document.body.classList.remove("masal-acik");
+}
+    </script>
+
+</body>
+</html>
