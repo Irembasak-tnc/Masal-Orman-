@@ -420,7 +420,9 @@ body > *:not(.arkaplan-isiklari) {
     <p class="ust-yazi">✧ BİR ZAMANLAR, UZAK DİYARLARDA ✧</p>
     <h1>Masal Ormanı</h1>
     <p>Bir zamanlar, uzak diyarlarda...</p>
-    <button>Masalları Keşfet</button>
+   <button onclick="document.getElementById('masallar').scrollIntoView({ behavior: 'smooth' })">
+    Masalları Keşfet
+</button>
 </header>
 <section class="tanitim">
     <h2>Masalların Büyülü Dünyasına Hoş Geldin</h2>
@@ -430,7 +432,7 @@ body > *:not(.arkaplan-isiklari) {
         Türk masallarının büyülü dünyasını keşfetmeye hazır mısın?
     </p>
 </section>
-<section class="masallar">
+<section class="masallar" id="masallar">
     <h2>Masal Kitaplığı</h2>
     <p>Her masal, bambaşka bir dünyaya açılan kapıdır.</p>
     <div class="masal-karti">
